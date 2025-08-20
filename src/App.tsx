@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useState } from 'react'
-import LinearLayout from './components/Layouts/LinearLayout'
+import LinearLayout from './components/Templates/LinearLayout'
 
 import './App.css'
 
