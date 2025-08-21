@@ -1,9 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import MagnifyIcon from '../atoms/MagnifyIcon'; // Assume this is an SVG icon component
-import Button from 'src/components/atoms/Button/Button.tsx'; // Basic button atom
-import Input from ''; // Basic input atom
 
-// Props for the SearchBtn molecule
+import Button from '../atoms/Button/Button';
+import Dropdown from '../atoms/Dropdown/Dropdown'; 
+
 export interface SearchBtnProps {
     placeholder?: string;
     onSearch?: (value: string) => void;

@@ -15,6 +15,13 @@ const DropdownTrigger = ({children}: DropdownTriggerProps) => {
         onClick: () => toggle()
     })
 }
+export default Dropdown => {
+    return (
+        <DropdownContext.Provider value={{}}>
+            {children}
+        </DropdownContext.Provider>
+    )
+}
 /*
 const DropdownContext = ({children, className, style}: DropdownContentProps) => {
     const {isOpen} = useDropdown();
