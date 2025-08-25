@@ -1,0 +1,11 @@
+import * as React from "react";
+
+const LinearLayout = ({children, justify}) => {
+  return (
+    <div className="flex justify-between">
+     {children}
+    </div>
+    )
+}
+
+export default LinearLayout;
