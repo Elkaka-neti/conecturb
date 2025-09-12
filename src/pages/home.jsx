@@ -1,10 +1,10 @@
 
 import React from 'react';
 import MainLayout from '../components/Templates/MainLayout'
-//import CardLayout from '../components/Templates/CardLayout'
+import CardLayout from '../components/Templates/CardLayout'
 import LinearLayout from '@c/Templates/LinearLayout'
 import TextWarn from '@c/Atoms/TextLabel'
-//import Card from '@c/Molecules/Card/Card.jsx'
+import Card from '../Molecules/Card/Card.jsx'
 
 
 const Home = () => {
@@ -22,7 +22,6 @@ const rate = {
   
   return (    
 <MainLayout>
-hshs
 <br/><br/>
 
 <TextWarn>
@@ -49,7 +48,7 @@ mais
 
 <br/>
 <br/>
-hello world
+
 {/*
   <CardLayout>
 <Card product={product} rate={rate} storeName="hshs">.</Card>
