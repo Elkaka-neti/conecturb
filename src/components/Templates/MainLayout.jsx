@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Header from "@c/Atoms/Header.tsx"
-import Footer from "@c/Atoms/Footer.tsx"
+import Header from "../components/Atoms/Header.tsx"
+import Footer from "../components/Atoms/Footer.tsx"
 
 const MainLayout = ({
   children,

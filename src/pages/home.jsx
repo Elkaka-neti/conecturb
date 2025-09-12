@@ -1,10 +1,10 @@
 
 import React from 'react';
-import MainLayout from '@c/Templates/MainLayout'
-import CardLayout from '@c/Templates/CardLayout'
+import MainLayout from '../components/Templates/MainLayout'
+//import CardLayout from '../components/Templates/CardLayout'
 import LinearLayout from '@c/Templates/LinearLayout'
 import TextWarn from '@c/Atoms/TextLabel'
-import Card from './components/Molecules/Card/Card'
+//import Card from '@c/Molecules/Card/Card.jsx'
 
 
 const Home = () => {
@@ -49,7 +49,8 @@ mais
 
 <br/>
 <br/>
-<CardLayout>
+{/*
+  <CardLayout>
 <Card product={product} rate={rate} storeName="hshs">.</Card>
 <Card product={product} rate={rate} storeName="hshs">.</Card>
 <Card product={product} rate={rate} storeName="hshs">.</Card>
@@ -57,6 +58,8 @@ mais
 <Card product={product} rate={rate} storeName="hshs">.</Card>
 <Card product={product} rate={rate} storeName="hshs">.</Card>
 </CardLayout>
+*/
+}
 <br/>
 <br/>
 </MainLayout>
