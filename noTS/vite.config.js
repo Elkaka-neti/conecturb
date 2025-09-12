@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      '@c': "/workspaces/conecturb/noTS/src/components"
+      '@c': "./components"
     },
   }
 })
