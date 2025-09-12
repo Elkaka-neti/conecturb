@@ -21,14 +21,14 @@ const useDropdown = () => {
 /*
 * @description Define o elemento que ativa ou desativa o dropdown, React.cloneElement cria um clone de qualquer elemento que seja inserido dentro do Trigger e adiciona a função para alterar o estado do dropdown (aberto, fechado)
 */
-const DropdownTrigger = ({children}: DropdownTriggerProps) => {
+const DropdownTrigger = ({children}) => {
   const {toggle} = useDropdown();
-  return React.cloneElement(children as React.ReactElement, {
+  return React.cloneElement(children, {
     onClick: () => toggle()
   })
 }
 
-const DropdownContent = ({children, className, style}: DropdownContentProps) => {
+const DropdownContent = ({children, className, style}) => {
   const {isOpen} = useDropdown();
   return (
     <>
@@ -52,7 +52,7 @@ const DropdownContent = ({children, className, style}: DropdownContentProps) => 
 }
 
 
-const DropdownItem = ({onPress, children, disabled, className}: DropdownItemsProps) => {
+const DropdownItem = ({onPress, children, disabled, className}) => {
   const {isOpen} = useDropdown();
   return (
     <div onClick={() => onPress()} className={className}>

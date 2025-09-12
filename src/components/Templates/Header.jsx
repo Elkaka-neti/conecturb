@@ -1,6 +1,6 @@
 import * as React from "react";
-import Menu from '@c/Atoms/Menu'
-import Button from '@c/Atoms/Button'
+import Menu from '../Atoms/Menu'
+import Button from '../Atoms/Button'
 
 const Header = ({
   children,
