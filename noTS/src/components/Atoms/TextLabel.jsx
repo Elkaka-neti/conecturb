@@ -1,5 +1,4 @@
 import React from "react";
-import {TextLabelInterface} from "@base/TextLabel/TextLabel.types.ts";
 
 
 const Im = ({children}) => {
@@ -15,7 +14,7 @@ const TextLabel = ({
   align = "center",
   onClick,
   ...rest
-}: TextLabelInterface) => {
+}) => {
   return (
     <div className="w-full flex justify-center font-thin">
     <p className={classname} {...rest}>{children}</p>
