@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const BaseButton = ({
+const Button = ({
   children,
   onClick,
   disabled = false,
@@ -19,4 +19,4 @@ const BaseButton = ({
   );
 };
 
-export default BaseButton;
+export default Button;
