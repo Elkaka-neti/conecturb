@@ -8,9 +8,8 @@ const MainLayout = ({
 }) => {
 return (
 <div className="bg-white">
-  <Header/>
-   {children}
-  <Footer/>
+  <Header backColor={backColor}/>
+  ui
 </div>
   )
 }
