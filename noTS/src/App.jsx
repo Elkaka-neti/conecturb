@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './components/Header'
+// Precisamos importar o React para que o JSX funcione
+import React from 'react';
+import Home from './pages/home.tsx'
+  
+const App = () => {
+  return (    
+<Home/>
+    );
+};
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <Header/>
-    </>
-  )
-}
-
-export default App
+export default App;
