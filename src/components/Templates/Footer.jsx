@@ -9,10 +9,8 @@ const Footer = ({
 }) => {
 return (
   <div className="flex w-full bg-black/80  backdrop-blur-lg fixed bottom-0 h-[8%] text-white z-80 justify-around text-2xl align-center">
-  hh
-     <HomeIcon />
-     <CategoryIcon/>
-     <PersonIcon/>
+  
+     hhh
   </div>
   )
 }

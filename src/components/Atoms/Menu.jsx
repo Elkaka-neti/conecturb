@@ -67,7 +67,7 @@ const DropdownItem = ({onPress, children, disabled, className}) => {
 
 
 const Dropdown = ({children}) => {
-  const [isOpen, setOpen] = useState<boolean>(false);
+  const [isOpen, setOpen] = useState(false);
   
   const toggle = () => setOpen(preState => !preState);
   

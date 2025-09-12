@@ -1,12 +1,12 @@
 import * as React from 'react';
-import Dropdown from "@c/Atoms/Menu";
+import Dropdown from "../Atoms/Menu";
 
 const Menu = () => {
   return (
     <Dropdown>
       <Dropdown.Trigger>
         <button className="h-full flex align-center text-center justify-end text-3xl w-10 h-full">
-         <i className="bi bi-list self-center"></i>
+         <i className="bi bi-list self-center">👍🏻</i>
         </button>
       </Dropdown.Trigger>
 

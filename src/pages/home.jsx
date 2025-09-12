@@ -7,7 +7,7 @@ import TextWarn from '@c/Atoms/TextLabel'
 //import Card from '@c/Molecules/Card/Card.jsx'
 
 
-const Hom = () => {
+const Home = () => {
 const product = {
   name: "Hamburguer X",
   price: 24.96,
@@ -22,7 +22,7 @@ const rate = {
   
   return (    
 <MainLayout>
-
+hshs
 <br/><br/>
 
 <TextWarn>
@@ -68,12 +68,6 @@ hello world
     );
 };
 
-const Home = () => {
-  return (
-    <div className="bg-green-200 w-full h-7">
-      hello
-    </div>
-  )
-}
+
 
 export default Home;
