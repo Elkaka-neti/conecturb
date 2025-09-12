@@ -4,7 +4,7 @@ import MainLayout from '../components/Templates/MainLayout'
 import CardLayout from '../components/Templates/CardLayout'
 import LinearLayout from '@c/Templates/LinearLayout'
 import TextWarn from '@c/Atoms/TextLabel'
-import Card from '../Molecules/Card/Card.jsx'
+import Card from '../components/Molecules/Card/Card.jsx'
 
 
 const Home = () => {
@@ -42,14 +42,14 @@ mais
 <p className="self-center">Regional</p>
 </div>
 <div className=" w-[30%] flex justify-end ">
-<button className="bg-orange-400 mr-4.5 w-8 h-8 rounded-lg"><i className="bi bi-search text-white"></i></button>
+<button className="bg-orange-400 ml-3 w-8 h-8 rounded-lg"><i className="bi bi-search text-white"></i></button>
 </div>
 </LinearLayout>
 
 <br/>
 <br/>
 
-{/*
+
   <CardLayout>
 <Card product={product} rate={rate} storeName="hshs">.</Card>
 <Card product={product} rate={rate} storeName="hshs">.</Card>
@@ -58,8 +58,8 @@ mais
 <Card product={product} rate={rate} storeName="hshs">.</Card>
 <Card product={product} rate={rate} storeName="hshs">.</Card>
 </CardLayout>
-*/
-}
+
+
 <br/>
 <br/>
 </MainLayout>

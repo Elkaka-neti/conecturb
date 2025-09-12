@@ -5,13 +5,13 @@ const Menu = () => {
   return (
     <Dropdown>
       <Dropdown.Trigger>
-        <button className="h-full flex align-center text-center justify-end text-3xl w-10 h-full">
-         <i className="bi bi-list self-center">👍🏻</i>
+        <button className="h-full flex align-center z-6 text-center justify-end text-3xl w-10 h-full">
+         <i className="bi bi-list self-center z-5"></i>
         </button>
       </Dropdown.Trigger>
 
       <Dropdown.Content className="bg-black text-white rounded-tr-lg rounded-br-lg flex flex-col gap-10">
-        <Dropdown.Item onPress={() => alert('Abrindo perfil...')}>
+        <Dropdown.Item onPress={() => alert('abrindo perfil...')}>
           Ver Perfil
         </Dropdown.Item>
           Configurações
