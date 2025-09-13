@@ -1,6 +1,6 @@
 import React from 'react';
-import Input from './components/base/Input.tsx';
-import LoginOpt from './components/Molecules/LoginOpt.tsx';
+import Input from './Atoms/Global/Input.jsx';
+import LoginOpt from './Molecules/Login/LoginOpt.jsx';
 const LoginForm = () => {
   return (
 <form>
