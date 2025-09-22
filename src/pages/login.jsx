@@ -1,8 +1,8 @@
 import React from 'react';
-import Form from './components/Molecules/LoginForm.tsx'
-import LoginWel from "./components/Molecules/LoginWel.tsx";
-import LoginHeader from "./components/Organism/LoginHeader.tsx"
-import LoginFooter from "./components/Organism/LoginFooter.tsx"
+import Form from './components/Molecules/Login/LoginForm'
+import LoginWel from "./components/Atoms/Login/LoginWel";
+import LoginHeader from "./components/Organism/Login/LoginHeader"
+import LoginFooter from "./components/Organism/Login/LoginFooter"
 
 
 const Login = () => {
