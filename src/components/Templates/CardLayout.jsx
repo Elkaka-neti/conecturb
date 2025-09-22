@@ -1,8 +1,8 @@
 import * as React from "react";
 
-const CardLayout = ({children, justify}) => {
+const CardLayout = ({children}) => {
   return (
-    <div className="flex flex-col justify-center overflow-y-auto gap-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center overflow-y-auto gap-20">
      {children}
     </div>
     )
