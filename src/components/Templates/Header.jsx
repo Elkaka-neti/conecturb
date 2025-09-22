@@ -12,8 +12,8 @@ return (
    {/* Corrigir a estilizacao, se possivel adicionar em uma area separada que controla o estado. 
    - LAYOUT QUEBRADO PELA ADICAO DO <link>
    */}
-   <Link to="/login">
-     <Button className="bg-orange-400 rounded-lg h-[90%] w-[30%] text-lg text-white font-bold self-center" href="/login">Login</Button>
+   <Link to="/login" className="h-[90%] w-[30%]">
+     <Button className="bg-orange-400 rounded-lg h-full w-full text-lg text-white font-bold self-center" href="/login">Login</Button>
    </Link>
   </div>
   )
