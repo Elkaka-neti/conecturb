@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginTerc from "./components/Molecules/LoginTerc.tsx"
+import LoginTerc from "../../Molecules/Login/LoginTerc"
 
 const LoginFooter = () => {
 return (

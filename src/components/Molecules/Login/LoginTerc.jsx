@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginCard from "./components/base/LoginCard.tsx"
+import LoginCard from "../../Atoms/Login/LoginCard"
 
 const LoginTerc = () => {
   return (
