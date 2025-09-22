@@ -3,7 +3,7 @@ import React from 'react';
 import MainLayout from '../components/Templates/MainLayout'
 import CardLayout from '../components/Templates/CardLayout'
 import LinearLayout from '@c/Templates/LinearLayout'
-import TextWarn from '@c/Atoms/TextLabel'
+import TextWarn from '../components/Atoms/Global/TextLabel'
 import Card from '../components/Molecules/Card/Card.jsx'
 
 

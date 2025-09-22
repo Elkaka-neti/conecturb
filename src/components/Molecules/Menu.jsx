@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Dropdown from "../Atoms/Menu";
+import Dropdown from "../Atoms/Global/Menu";
 
 const Menu = () => {
   return (

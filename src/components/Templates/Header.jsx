@@ -1,6 +1,6 @@
 import * as React from "react";
 import Menu from '../Molecules/Menu'
-import Button from '../Atoms/Button'
+import Button from '../Atoms/Global/Button'
 
 const Header = ({
   children,
