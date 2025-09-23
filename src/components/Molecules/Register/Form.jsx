@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Input from "./componets/Atoms/Global/Input"
+import Input from "../../Atoms/Global/Input"
 const RegisterForm = () => {
 return (
 <div className="p-8">
