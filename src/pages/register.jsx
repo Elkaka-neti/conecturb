@@ -1,10 +1,10 @@
 
-import RegisterCard from "./components/Atoms/Register/RegisterCard"
+import RegisterCard from "../components/Atoms/Register/RegisterCard"
 
-import RegisterHeader from "./components/Atoms/Register/RegisterHeader"
-import RegisterForm from "./components/Molecules/Register/Form";
+import RegisterHeader from "../components/Atoms/Register/RegisterHeader"
+import RegisterForm from "../components/Molecules/Register/Form";
 
-import Input from "./components/Atoms/Global/Input"
+//import Input from "./components/Atoms/Global/Input"
 import React from "react";
 
 const Register = () => {
