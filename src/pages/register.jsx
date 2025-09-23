@@ -3,7 +3,7 @@ import RegisterCard from "../components/Atoms/Register/RegisterCard"
 
 import RegisterHeader from "../components/Atoms/Register/RegisterHeader"
 import RegisterForm from "../components/Molecules/Register/Form";
-
+import {Link} from 'react-router-dom'
 //import Input from "./components/Atoms/Global/Input"
 import React from "react";
 
@@ -32,7 +32,7 @@ const Register = () => {
 
       <div className="bg-gray-50 px-8 py-6 border-t border-gray-200">
         <p className="text-center text-sm text-gray-600">
-          Já tem uma conta? <a href="#login" className="text-orange-500 hover:text-orange-500 font-medium">Entrar</a>
+          Já tem uma conta? <Link to="/login" className="text-orange-500 hover:text-orange-500 font-medium">Entrar</Link>
         </p>
       </div>
     </div>

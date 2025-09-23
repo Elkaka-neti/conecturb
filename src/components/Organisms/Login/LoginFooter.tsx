@@ -1,5 +1,6 @@
 import React from 'react';
 import LoginTerc from "../../Molecules/Login/LoginTerc"
+import {Link} from 'react-router-dom'
 
 const LoginFooter = () => {
 return (
@@ -20,7 +21,7 @@ return (
 <div className="mt-6 text-center">
   <p className="text-sm text-gray-600">
     Não tem uma conta? 
-    <a href="#" className="font-medium text-orange-600 hover:text-orange-500"> Criar</a>
+    <Link to="/register" className="font-medium text-orange-600 hover:text-orange-500"> Criar</Link>
   </p>
 </div>
 </>
