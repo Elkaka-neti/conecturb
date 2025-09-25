@@ -4,12 +4,17 @@ import LoginWel from "../components/Atoms/Login/LoginWel";
 import LoginHeader from "../components/Organisms/Login/LoginHeader"
 import LoginFooter from "../components/Organisms/Login/LoginFooter"
 import {useEffect} from 'react';
-
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
 useEffect(() => {
 console.log(localStorage.getItem('login'))
+if(localStorage.getItem('login')){
+  const navegate = useNavigate('/');
+  navegate('/');
+  alert("Bem vindo: " + JSON.parse(localStorage.getItem('login')).email)
+}
 })
 
 return (
