@@ -1,6 +1,8 @@
 import 'axios';
 
-export async function registerUser(name, email, password, telefone) {
+export async function registerUser(event) {
+  console.log(event);
+  
   try {
     const response = await axios.post("", {
       name,
