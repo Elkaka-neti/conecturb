@@ -1,12 +1,12 @@
 import React from 'react';
-
+import {registerUser} from '../../../api/auth.js'
 import Input from "../../Atoms/Global/Input"
 const RegisterForm = () => {
 return (
 <div className="p-8">
   <h2 className="text-2xl font-bold text-gray-800 mb-6">Crie sua conta</h2>
 
-  <form>
+  <form onSubmit={(e) => registerUser(e)}>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 
       <Input name="Nome" placeholder="Fulano" icon="person"/>
