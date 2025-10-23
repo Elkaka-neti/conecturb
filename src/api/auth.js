@@ -9,20 +9,20 @@ export async function registerUser(event) {
   //4 --> confirm pass
   const telefone = event.target[5].value;
 
-  console.log({name, email,  password, telefone})
+  console.log({data: {name, email,  password, telefone}})
   try {
-    const response = await axios.post("", {
+    const response = await axios.post("https://automatic-space-robot-7qj4v7xgrfww5q-3000.app.github.dev/users", {data: {
       name,
       email,
       password,
       telefone
-    });
+  }});
     
     //res.token
     //res.refreshToken
-    
+    console.log(response)
     //Alguma funcao de salvar em cookies os tokens
   }catch(err) {
-    
+    console.error(err)
   }
 }
