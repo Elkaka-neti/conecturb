@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {registerUser} from '../../../api/auth.js'
+<<<<<<< HEAD
 import Input from "../../Atoms/Global/Input"
 
 const RegisterForm = () => {
@@ -16,11 +17,25 @@ const RegisterForm = () => {
     setTelefone(formatted);
   }
 
+=======
+import Input from "../../Atoms/Global/Input";
+import {useUser} from '../../hooks/useUser';
+
+const RegisterForm = () => {
+const {login} = useUser();
+
+  const handleSubmit = async(e) => {
+    const userData = await registerUser(e);
+    login(userData);
+  }
+  
+  
+>>>>>>> 133dd740a581c78ea66a2eebe55294e9610ea286
 return (
 <div className="p-8">
   <h2 className="text-2xl font-bold text-gray-800 mb-6">Crie sua conta</h2>
 
-  <form onSubmit={(e) => registerUser(e)}>
+  <form onSubmit={(e) => handleSubmit(e)}>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 
       <Input name="Nome" placeholder="Fulano" icon="person"/>
