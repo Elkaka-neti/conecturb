@@ -17,10 +17,11 @@ export async function registerUser(event) {
       password,
       telefone
   }});
-    
+  
+    console.log(response)
+    return {name, email, telefone};
     //res.token
     //res.refreshToken
-    console.log(response)
     //Alguma funcao de salvar em cookies os tokens
   }catch(err) {
     console.error(err)
