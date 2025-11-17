@@ -8,10 +8,9 @@ const Header = ({
 }) => {
 return (
   <div className="flex justify-between pr-4 pt-2 w-full h-10 relative ">
-   <Menu/>
-   
-   <Link to="/login" className="h-[90%] w-[30%]">
-     <Button className="bg-orange-400 rounded-lg h-full w-full text-lg text-white font-bold self-center" href="/login">Login</Button>
+   <div></div>
+   <Link to="/login" className="h-[90%] ">
+     <Button className="bg-orange-400 rounded-lg h-full text-lg text-white font-bold self-center px-4 hover:bg-orange-500 transition-all duration-200" href="/login">Login</Button>
    </Link>
   </div>
   )

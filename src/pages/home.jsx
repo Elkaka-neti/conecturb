@@ -22,7 +22,6 @@ const rate = {
   
   return (    
 <MainLayout>
-<br/><br/>
 
 <TextWarn>
 Menos
@@ -33,9 +32,7 @@ menos
 mais
 <TextWarn.B> soluções.</TextWarn.B>
 </TextWarn>
-            
-<br/>
-<br/>
+     <br/>
 <LinearLayout>
 <div className="w-[60%] h-10 flex justify-between font-thin text-2xl ">
 <p className="self-center ml-4.5">Local</p>
@@ -45,8 +42,6 @@ mais
 <button className="bg-orange-400 ml-3 w-8 h-8 rounded-lg"><i className="bi bi-search text-white"></i></button>
 </div>
 </LinearLayout>
-
-<br/>
 <br/>
 
 
@@ -60,8 +55,6 @@ mais
 </CardLayout>
 
 
-<br/>
-<br/>
 </MainLayout>
        
     );

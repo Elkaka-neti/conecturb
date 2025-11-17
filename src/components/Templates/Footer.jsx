@@ -8,7 +8,7 @@ const Footer = ({
   backColor = "white"
 }) => {
 return (
-  <div className="flex w-full bg-black/80  backdrop-blur-lg fixed bottom-0 h-[8%] text-white z-80 justify-around text-2xl align-center z-50">
+  <div className="flex w-full bg-black/80  backdrop-blur-lg fixed bottom-0 h-[8%] text-white z-80 justify-around text-2xl align-center z-50 md:h-full md:top-0 md:left-0 md:w-[8%] md:h-screen md:flex-col md:justify-center md:gap-10">
   
      
     <i className="bi bi-house-door self-center hover:text-orange-400"></i>

@@ -8,14 +8,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
-useEffect(() => {
-console.log(localStorage.getItem('login'))
-if(localStorage.getItem('login')){
-  const navegate = useNavigate('/');
-  navegate('/');
-  alert("Bem vindo: " + JSON.parse(localStorage.getItem('login')).email)
-}
-})
 
 return (
 <div className="min-h-screen flex flex-col md:flex-row">
