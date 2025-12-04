@@ -8,6 +8,7 @@ const RegisterShop = () => {
             <h2 className="text-2xl font-bold mb-6 text-center">Cadastro de Loja</h2>
             <div className='flex w-[90%]  h-5 justify-center rounded-lg'>
               hello world i try to use this editor...
+and i think its works!
             </div>
         </form>
         
