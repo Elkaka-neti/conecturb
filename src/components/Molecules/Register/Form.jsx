@@ -1,36 +1,29 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {registerUser} from '../../../api/auth.js'
-<<<<<<< HEAD
 import Input from "../../Atoms/Global/Input"
-
-const RegisterForm = () => {
-
-  const [telefone, setTelefone] = useState('');
-
-  const formatPhoneNumber = (e) => {
-    const raw = e.target.value.replace(/\D/g, '');
-    let formatted = raw;
-    if (raw.length <= 2) formatted = raw;
-    else if (raw.length <= 6) formatted = `(${raw.slice(0,2)}) ${raw.slice(2)}`;
-    else if (raw.length <= 10) formatted = `(${raw.slice(0,2)}) ${raw.slice(2,6)}-${raw.slice(6)}`;
-    else formatted = `(${raw.slice(0,2)}) ${raw.slice(2,7)}-${raw.slice(7,11)}`;
-    setTelefone(formatted);
-  }
-
-=======
-import Input from "../../Atoms/Global/Input";
 import {useUser} from '../../hooks/useUser';
+import { useNavigate } from 'react-router-dom';
+
 
 const RegisterForm = () => {
-const {login} = useUser();
+const {login, user} = useUser();
+const navigate = useNavigate();
+
+useEffect(() => {
+  if (user) {
+    navigate('/');
+  }
+}, [user, navigate]);
 
   const handleSubmit = async(e) => {
     const userData = await registerUser(e);
-    login(userData);
+    if(userData) {
+      login(userData);
+      navigate('/');
+    }
   }
   
-  
->>>>>>> 133dd740a581c78ea66a2eebe55294e9610ea286
+
 return (
 <div className="p-8">
   <h2 className="text-2xl font-bold text-gray-800 mb-6">Crie sua conta</h2>
@@ -51,7 +44,7 @@ return (
       <Input name="Confirmar Senha" placeholder="" type="password"/>
     </div>
 
-    <Input name="Telefone" value={telefone} placeholder="(33) 91234-5678" type="text" onChange={(e) => formatPhoneNumber(e)} className="mb-6"/>
+    <Input name="Telefone" placeholder="(33) 91234-5678" type="text" className="mb-6"/>
 
     <div className="flex items-center mb-6 mt-4">
       <input id="terms" type="checkbox" className="h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300 rounded"/>

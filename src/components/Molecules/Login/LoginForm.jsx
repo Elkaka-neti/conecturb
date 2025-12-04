@@ -1,22 +1,27 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Input from '../../Atoms/Global/Input';
 import LoginOpt from '../../Molecules/Login/LoginOpt.jsx';
-
+import { loginUser } from '../../../api/auth.js';
+import {useUser} from '../../hooks/useUser.jsx';
 const LoginForm = () => {
   const navigate = useNavigate();
+  const { login, user } = useUser();
 
-  function handleSubmit(event) {
+  useEffect(() => {
+    if (user) {
+      navigate('/');
+    }
+  }, [user, navigate]);
+
+  async function handleSubmit(event) {
     event.preventDefault();
     const email = event.target[0].value;
     const password = event.target[1].value;
 
-    console.log('Email:', email);
-    console.log('Password:', password);
-
-    var formData = { email: email, password: password };
-
-    localStorage.setItem('login', JSON.stringify(formData));
+    const response = await loginUser(email, password);
+    console.log(response)
+    login({name: response.data.name, email: response.data.email, telefone: response.data.telefone});
     navigate('/'); 
   }
 

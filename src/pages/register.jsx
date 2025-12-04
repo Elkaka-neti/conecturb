@@ -4,6 +4,7 @@ import RegisterCard from "../components/Atoms/Register/RegisterCard"
 import RegisterHeader from "../components/Atoms/Register/RegisterHeader"
 import RegisterForm from "../components/Molecules/Register/Form";
 import {Link} from 'react-router-dom'
+ 
 //import Input from "./components/Atoms/Global/Input"
 import React from "react";
 
@@ -17,9 +18,10 @@ const Register = () => {
   <div className="max-w-4xl mx-auto">
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12" data-aos="fade-up">
-
-      <RegisterCard name="Loja" description="Sou um comercio e quero me cadastrar na plataforma." type="shop-window"/>
-               
+      <Link to='/register/shop' className="no-underline">
+       <RegisterCard name="Loja" description="Sou um comercio e quero me cadastrar na plataforma." type="shop-window"/>
+      </Link>     
+         
       <RegisterCard name="Entregador" description="Sou entregador e quero ganhar um dinheiro extra fazendo entregas." type="box"/>
                
       <RegisterCard name="Cliente" description="Sou cliente e quero me cadastrar para receber encomendas." type="person"/>
